@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "thinFont";
+  src: url("./fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "regFont";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+body {
+  background-image: url("./images/plasteringStock2.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  margin: 0;
+  font-family: "thinFont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#header {
+  background: rgb(58, 58, 88);
+  height: 5em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 1.5em rgb(58, 58, 88);
+}
+
+#headerCont {
+  display: flex;
+  align-items: center;
+}
+
+#smith {
+  font-family: "regFont";
+}
+
+#logo {
+  height: 2em;
+  margin: 0 1em 0 1em;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.whiteBoxDesc {
+  background: white;
+  width: 60vw;
+  max-width: 800px;
+  border-left: 0.5em solid rgb(58, 58, 88);
+  opacity: 0.9;
+  box-shadow: 0 0 1em rgb(63, 63, 63);
+  padding: 0.2em 1em 0.2em 1em;
+  margin: 2em 2em 0 2em;
+}
+
+.review {
+  background: white;
+  border-top: 0.1em solid rgb(190, 190, 190);
+  width: 20vw;
+  opacity: 0.9;
+  padding: 0.2em 1vw 0.2em 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blueBox {
+  background: rgb(58, 58, 88);
+  width: 60vw;
+  max-width: 800px;
+  box-shadow: 0 0 1em rgb(63, 63, 63);
+  color: white;
+  padding: 1em;
+  margin: 2em;
+  display: flex;
+  justify-content: space-around;
+  font-family: "regFont";
+}
+
+#plasteringGuy {
+  height: 9.5vw;
+}
+
+#reviewsAndGuy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2em 0 2em 0;
+}
+
+#stars {
+  height: 1.5em;
+}
+
+#pixlee_container {
+  margin: 1em 15vw 1em 15vw;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  background: rgb(58, 58, 88);
+  height: 5em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 1.5em rgb(58, 58, 88);
+}
+
+@media only screen and (max-width: 800px) {
+  #tagline {
+    display: none;
+  }
+  .whiteBoxDesc {
+    width: 80vw;
+    margin: 0 2em 0 2em;
+  }
+  .blueBox {
+    width: 80vw;
+    margin: 2em;
+  }
+  #pixlee_container {
+    margin: 0;
+  }
+  #about {
+    flex-direction: column-reverse;
+  }
+  #main {
+    flex-direction: column;
+  }
+  #plasteringGuy {
+    height: 36vw;
+  }
+  .review {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blueBox {
+    height: 10vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-;
+  }
+  #footer {
+    flex-direction: column;
+    height: 7em;
+  }
+}
