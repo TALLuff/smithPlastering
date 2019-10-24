@@ -35,6 +35,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   overflow: hidden;
   margin-bottom: 2vh;
+  height: 40vw;
 }
 
 #imageCompany {
