@@ -23,7 +23,7 @@ function About() {
               <span id="plastering">Plastering</span>
             </h1>
           </div>
-          <h3 id="tagline">All your Greater Manchester Plastering Needs</h3>
+          <h3 id="tagline">All Your Greater Manchester Plastering Needs</h3>
         </div>
       </div>
       <div id="main">
