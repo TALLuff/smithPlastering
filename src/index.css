@@ -233,6 +233,7 @@ body {
 }
 
 .shadowed {
+  padding: 0.5em 0 0.5em 0.5em;
   -webkit-filter: drop-shadow(0 0 1.5em rgb(58, 58, 88, 0.5));
   filter: url(#drop-shadow);
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='rgb(58, 58, 88,0.5)')";
