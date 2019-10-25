@@ -189,7 +189,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 1.5em rgb(58, 58, 88);
+  box-shadow: 0 0 1.5em rgb(58, 58, 88), 0 2em 0 rgb(58, 58, 88);
 }
 
 .tick {
