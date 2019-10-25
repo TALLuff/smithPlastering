@@ -12,17 +12,45 @@
   </head>
   <body>
     <div id="root"></div>
-    <div id="pixlee_container"></div>
-    <script type="text/javascript">
-      window.PixleeAsyncInit = function() {
-        Pixlee.init({ apiKey: "5frtHqaaUio21ZMEWZgd" });
-        Pixlee.addSimpleWidget({ widgetId: "232" });
-      };
-    </script>
-    <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <div id="subHeadCont">
+      <h3
+        style="margin: 0;
+      padding: 0;
+      margin-top: 1em;
+      font-size: 1.5em;
+      text-align: center;
+      border-bottom: 3px solid rgb(58, 58, 88);"
+        className="subHead"
+      >
+        My Work
+      </h3>
+    </div>
+    <div id="instafeed">
+      <iframe
+        src="https://snapwidget.com/embed/752181"
+        class="snapwidget-widget"
+        allowtransparency="true"
+        frameborder="0"
+        scrolling="no"
+        style="border:none; overflow:hidden;  width:100%; "
+      ></iframe>
+    </div>
     <div id="footer">
       <h8>Smith Plastering 2019</h8>
       <h8>Website by Talluff</h8>
     </div>
   </body>
+  <svg height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="drop-shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="20" />
+      <feOffset dx="0" dy="0" result="offsetblur" />
+      <feFlood flood-color="rgba(58,58,88,0.5)" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </svg>
 </html>

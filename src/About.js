@@ -14,6 +14,7 @@ function About() {
           <div id="imageCompany">
             <img
               id="logo"
+              className="shadowed"
               alt="trowelLogo"
               src={require("./images/trowel.png")}
             ></img>
@@ -27,8 +28,8 @@ function About() {
       </div>
       <div id="main">
         <div id="about">
+          <h3 className="subHead">About me</h3>
           <div className="whiteBoxDesc">
-            <h3>About me:</h3>
             <p id="description">
               Hi, I am a fully qualified level NVQ2 plasterer.
               <br />I have been plastering for over ten years now and have
@@ -43,7 +44,7 @@ function About() {
               price.
               <br />I carry all the work out myself and guarantee it is to a
               very high standard - pay is on completion assuming you are happy
-              with the job Which I can assure you will be!
+              with the job which I can assure you will be!
               <br />
               Please have a look at examples of my work and contact me for a
               free no obligation no pressure consultation and quote!
@@ -96,6 +97,48 @@ function About() {
           </Fade>
         </ul>
       </div>
+      <div id="subHeadCont">
+        <h3 className="subHead">Testimonials</h3>
+      </div>
+      <ul id="testimonials">
+        <Fade up>
+          <li className="review">
+            <div className="testimonialName">Jerry Davis</div>
+            <div>
+              <span className="quoteStart">❝</span>
+              <div>
+                Mike was great, he was very punctual, tidy and polite. Will
+                definitely be having him back for more work. And would
+                definitely recommend!
+              </div>
+              <span className="quoteEnd">❞</span>
+            </div>
+          </li>
+          <li className="review">
+            <div className="testimonialName">Harry Adams</div>
+            <div>
+              <span className="quoteStart">❝</span>
+              <div>
+                The plastering job was top notch and at a very reasonable price.
+                Mike was professional and could clearly understand our
+                requirements and came up with great solutions.
+              </div>
+              <span className="quoteEnd">❞</span>
+            </div>
+          </li>
+          <li className="review">
+            <div className="testimonialName">Ella Taylor</div>
+            <div>
+              <span className="quoteStart">❝</span>
+              <div>
+                Hired Mike to complete the plastering for our extension.
+                Wonderful job, just what we wanted!
+              </div>
+              <span className="quoteEnd">❞</span>
+            </div>
+          </li>
+        </Fade>
+      </ul>
     </div>
   );
 }

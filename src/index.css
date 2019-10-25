@@ -14,12 +14,12 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100%;
   margin: 0;
   font-family: "lightFont";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1em;
 }
 
 #mainImg {
@@ -36,6 +36,8 @@ body {
   overflow: hidden;
   margin-bottom: 2vh;
   height: 40vw;
+  display: flex;
+  align-items: center;
 }
 
 #imageCompany {
@@ -49,9 +51,8 @@ body {
 #imageTitle {
   position: absolute;
   text-align: center;
-  top: 15vw;
   width: 100%;
-  font-size: 2em;
+  font-size: 2.5vw;
   font-family: "thinFont";
   color: white;
   text-shadow: 0 0 2em black, 0 0 1em black;
@@ -104,7 +105,7 @@ body {
   opacity: 0.9;
   box-shadow: 0 0 1em rgb(63, 63, 63);
   padding: 0.2em 1em 0.2em 1em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .blueBox {
@@ -124,8 +125,9 @@ body {
   height: 1.5em;
 }
 
-#pixlee_container {
-  margin: 3em 15vw 2em 15vw;
+#instafeed {
+  width: 60vw;
+  margin: 1em 20vw 1em 20vw;
   overflow: hidden;
 }
 
@@ -139,6 +141,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 2em;
+  padding: 1em;
+  overflow: hidden;
 }
 
 #jobs > li {
@@ -153,6 +157,28 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 0.5em;
+  box-shadow: 0 0 1em rgb(63, 63, 63);
+}
+
+#testimonials {
+  padding: 0 0 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#testimonials > li {
+  background: rgb(255, 255, 255);
+  margin: 0.5em;
+  width: 50vw;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  padding-bottom: 2em;
   box-shadow: 0 0 1em rgb(63, 63, 63);
 }
 
@@ -176,6 +202,43 @@ body {
   align-items: center;
 }
 
+#subHeadCont {
+  display: flex;
+  justify-content: center;
+}
+
+.subHead {
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 3px solid rgb(58, 58, 88);
+}
+
+.quoteStart {
+  color: rgb(58, 58, 88);
+  font-size: 1.5em;
+}
+
+.quoteEnd {
+  position: absolute;
+  right: 0.5em;
+  font-size: 1.5em;
+  color: rgb(58, 58, 88);
+}
+
+.testimonialName {
+  font-size: 1.2em;
+}
+
+.shadowed {
+  -webkit-filter: drop-shadow(0 0 1.5em rgb(58, 58, 88));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+}
+
 @media only screen and (max-width: 1200px) {
   #tagline {
     display: none;
@@ -186,25 +249,29 @@ body {
   .blueBox {
     width: 80vw;
   }
-  #pixlee_container {
-    margin: 0;
+  #instafeed {
+    width: 70vw;
+    margin: 1em 15vw 0.5em 15vw;
   }
   #main {
     flex-direction: column;
   }
   #jobs > li {
-    width: 80vw;
+    width: 50vw;
+    max-width: none;
   }
   #jobs {
     align-items: center;
     padding: 0;
   }
-  #imageTitle {
-    font-size: 1.5em;
-    top: 20vw;
-  }
   #imageContainer {
     margin: 0;
+  }
+  #testimonials > li {
+    width: 65vw;
+  }
+  #imageTitle {
+    font-size: 3vw;
   }
 }
 
@@ -218,15 +285,28 @@ body {
     flex-direction: column;
     height: 6em;
   }
-  #imageTitle {
-    font-size: 1em;
-    top: 28vw;
-  }
   #header {
     flex-direction: column;
     justify-content: space-around;
   }
   #header > h3 {
     margin: 0;
+  }
+  #instafeed {
+    width: 100vw;
+    margin: 1em 0 0.5em 0;
+  }
+  .whiteBoxDesc {
+    margin-top: 1em;
+  }
+  #testimonials > li {
+    width: 80vw;
+  }
+  #imageTitle {
+    font-size: 4vw;
+  }
+  #jobs > li {
+    width: 80vw;
+    max-width: none;
   }
 }
