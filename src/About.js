@@ -28,7 +28,7 @@ function About() {
       </div>
       <div id="main">
         <div id="about">
-          <h3 className="subHead">About me</h3>
+          <h3 className="subHead">About Me</h3>
           <div className="whiteBoxDesc">
             <p id="description">
               Hi, I am a fully qualified level NVQ2 plasterer.
