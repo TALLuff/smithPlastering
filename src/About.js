@@ -134,7 +134,9 @@ function About() {
                 Hired Mike to complete the plastering for our extension.
                 Wonderful job, just what we wanted!
               </div>
-              <span className="quoteEnd">❞</span>
+              <div className="quoteEnd">
+                <span>❞</span>
+              </div>
             </div>
           </li>
         </Fade>

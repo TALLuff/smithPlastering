@@ -161,7 +161,7 @@ body {
 }
 
 #testimonials {
-  padding: 0 0 1em 0;
+  padding: 0 0 0.5em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +178,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5em;
-  padding-bottom: 2em;
   box-shadow: 0 0 1em rgb(63, 63, 63);
 }
 
@@ -222,8 +221,9 @@ body {
 }
 
 .quoteEnd {
-  position: absolute;
-  right: 0.5em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   font-size: 1.5em;
   color: rgb(58, 58, 88);
 }
